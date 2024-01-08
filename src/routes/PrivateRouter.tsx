@@ -47,7 +47,8 @@ const PrivateRouter = () => {
 	return token ? (
 		<Outlet />
 	) : (
-		<Navigate to='/' />
+		// <Navigate to='mineria.cosapi.com.pe' />
+		<>{(window.location.href = "http://mineria.cosapi.com.pe")}</>
 		// <h1>Hola Mundo</h1>
 	);
 };
